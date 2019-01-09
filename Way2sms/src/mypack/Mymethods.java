@@ -28,6 +28,7 @@ package mypack;
 			{
 				return("Unknown Browser");
 			}
+			Thread.sleep(2000);
 			driver.get(d);
 			Wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("mobile No")));
 			driver.manage().window().maximize();
